@@ -1,0 +1,1018 @@
+<html>
+<head>
+  <link rel="icon" href="Images/pianoIcon.png">
+  <link href="https://fonts.googleapis.com/css?family=Share|Karla|Raleway|Montserrat|Open+Sans" rel="stylesheet">
+  <title>
+    Arrowsmith Piano
+  </title>
+
+  <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    body {
+      margin:0px;
+    }
+
+    a {
+      color:black;
+    }
+
+    .wlink {
+      color:white;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      top:0;
+      overflow: hidden;
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+
+    }
+
+    .navli {
+      margin: 0;
+      font-size: 1.1vw;
+      padding-top: 1.2vw;
+      padding-bottom:1vw;
+      padding-left: 1.2vw;
+      padding-right: 0.6vw;
+      display: inline;
+      float:right;
+      text-align: right;
+      font-family: 'Raleway', sans-serif;
+      letter-spacing: 2px;
+    }
+
+    .navli a {
+      text-decoration: none;
+      padding-top: 20px;
+      padding-bottom:20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      color:white;
+      text-transform:uppercase;
+
+    }
+
+    .navli a:hover {
+      background-color:rgba(0, 4, 33, 1);
+      color: rgb(138, 163, 204);
+      transition: color 0.5s ease-in-out;
+      transition: background-color 0.5s ease-in-out;
+      margin:0;
+    }
+    .nav {
+      padding:0%;
+      margin:0;
+        background-color: rgba(0, 4, 33, 0.8);
+    }
+
+    .parallax1 {
+      padding-top: 1em;
+      background-image: url("Images/6.jpg");
+      min-height: 47vw;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Raleway', sans-serif;
+      color:white;
+      width:100%;
+
+    }
+
+    .parallax2 {
+      text-align: left;
+      margin-top:1em;
+      padding-top: 1em;
+      background-image: url("Images/practicin.jpg");
+      min-height: 20vw;
+      padding-bottom: 1em;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Raleway', sans-serif;
+      color:white;
+      width:100%;
+
+    }
+
+    .parallax3 {
+      text-align: left;
+      margin-top:1em;
+      padding-top: 1em;
+      background-image: url("Images/camp.jpg");
+      min-height: 20vw;
+      padding-bottom: 1em;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top;
+      font-family: 'Raleway', sans-serif;
+      color:white;
+      width:100%;
+
+    }
+
+    .title {
+      margin-left: 41.6%;
+      padding-top: 17.5vw;
+      font-size: 5vw;
+
+    }
+
+    hr {
+      width:5%;
+      margin-left:48%;
+    }
+
+    button {
+      border-color: rgba(0,0,0,0);
+      background-color:rgb(158, 165, 209);
+      font-size: 1vw;
+      padding: 1vw;
+      padding-left: 1.3vw;
+      padding-right: 1.3vw;
+      font-family: 'Raleway', sans-serif;
+      color:white;
+      border:0px;
+    }
+
+    button:hover {
+      background-color:rgb(122, 127, 163);
+      transition: background-color 0.5s ease-in-out;
+    }
+
+
+    #forward {
+      border-radius: 100%;
+      padding-bottom:0.7vw;
+      padding-top:0.7vw;
+      padding-left: 1.1vw;
+      padding-right: 1.1vw;
+      color:rgb(48, 48, 48);
+      background-color: rgb(226, 226, 226);
+      margin-left: 47.5%;
+    }
+
+    #forward:hover {
+      background-color: rgb(183, 183, 183);
+    }
+
+    footer {
+      background-color: rgba(0, 4, 33, 0.8);
+      margin:0;
+      padding-top:1%;
+      padding-bottom:1%;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .text {
+      font-weight: normal;
+      margin-left: 2.8%;
+      font-size: 17px;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .text2 {
+      font-weight: normal;
+      font-size: 17px;
+      font-family: 'Raleway', sans-serif;
+      color:white;
+      text-align: left;
+    }
+
+    li {
+      margin-left: 3vw;
+      font-size: 18px;
+      color:white;
+      font-weight: normal;
+    }
+
+    .subtitle {
+      font-family: 'Raleway',sans-serif;
+      color:rgb(94, 116, 153);
+      padding-bottom:0.5em;
+      padding-right:1em;
+      padding-left:1.4em;
+      font-size: 36px;
+      font-weight: bolder;
+      letter-spacing: 2px;
+
+    }
+
+    .subtitle2 {
+      font-family: 'Raleway',sans-serif;
+      color:white;
+      padding-bottom:0.5em;
+      padding-right:1em;
+      padding-left:5%;
+      font-size: 36px;
+      font-weight: bolder;
+      letter-spacing: 2px;
+
+    }
+
+    .subtitle3 {
+      text-align: center;
+      font-family: 'Raleway',sans-serif;
+      color:rgb(94, 116, 153);
+      padding-bottom:0.5em;
+      font-size: 42px;
+      font-weight: bolder;
+      letter-spacing: 2px;
+    }
+
+    h3 {
+      font-family: 'Raleway',sans-serif;
+      font-size: 16px;
+      text-align: left;
+    }
+    table {
+      width: 100%;
+    }
+
+    td {
+      width: 33%;
+      text-align: center;
+    }
+
+
+
+
+    .accordion {
+      background-color: rgb(126, 127, 160);
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width:79%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.2s;
+    }
+
+    .active, .accordion:hover {
+      background-color: rgb(96, 98, 132);
+    }
+
+
+    .panel {
+      padding: 0 2%;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: rgba(234, 234, 234, 0.85);
+      margin-left: 10.6%;
+      max-width: 74.8%;
+    }
+
+    .dates {
+      text-align: left;
+      color:rgb(48,48,48);
+      font-family: 'Raleway', sans-serif;
+      margin-left: 1em;
+
+    }
+
+    #lastitem {
+      padding-bottom: 1.5em;
+    }
+
+    .conservatory {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.4vw;
+      font-weight: bold;
+      color:rgb(53, 97, 168);
+      text-align: center;
+    }
+
+    .app_dates {
+      text-align: left;
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      color:rgb(53, 97, 168);
+
+    }
+
+    .seasons {
+      font-family: 'Raleway', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      color:rgb(94, 116, 153);
+    }
+
+    .competition_list {
+      font-size: 18px;
+      margin-left: 20%;
+      color: black;
+      text-align: left;
+      font-family: 'Raleway', sans-serif;
+      margin-bottom: 0.3em;
+    }
+
+    .details {
+      color:rgb(53, 97, 168);
+    }
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 24px;
+      border: none;
+      outline: none;
+      border-radius: 1vw;
+      background-color:rgb(158, 165, 209);
+      color: white;
+      cursor: pointer;
+      padding-left: 1%;
+      padding-right:1%;
+      padding-top: 0.5%;
+      padding-bottom:0.5%;
+      border-radius: 4px;
+      transition: 0.5s ease-in-out;
+    }
+
+      #myBtn:hover {
+        background-color: #555;
+      }
+
+  </style>
+
+
+
+</head>
+<body>
+  <ul class="nav" >
+    <li class="navli"><a href="contact.html">Contact/FAQ  </a></li>
+    <li class="navli"><a href="resources.html">Resources</a></li>
+    <li class="navli"><a href="events.html">Events</a></li>
+    <li class="navli"><a href="gallery.html">Gallery</a></li>
+    <li class="navli"><a href="about.html">About</a></li>
+    <li class="navli"><a href="index.html">HOME</a></li>
+  </ul>
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#8679;</button>
+  <div class="parallax1">
+    <p class="title">
+      Events
+    </p>
+    <br>
+    <button id="forward" onClick="document.getElementById('exams').scrollIntoView({ behavior: 'smooth'});">
+      &#8595;
+    </button>
+
+
+  </div>
+  <table>
+    <tr>
+      <h1 class="subtitle">
+        <strong> EXAMS <strong>
+      </h1>
+    </tr>
+    <tr>
+      <td class="text" valign="top" style="padding-left: 3em;text-align:left;">
+        Jane helps to prepare students in fulfilling examination<br>
+         requirements for both the <a href="https://www.rcmusic.com/learning/examinations/examination-resources-students/examination-dates-canada">Royal Conservatory of music </a>(RCM) <br>
+         as well as the <a href="https://conservatorycanada.ca/examination-information/" >Canadian Conservatory</a>.
+         <br>
+         <br >
+         Exams are <i>not</i> mandatory! Nevertheless, they do provide certification,
+         <br>that can be transferable into high school credits as well as
+         <br>application and resume documents.Exams also provide preparation
+         <br>for the pursuit of post-secondary music degrees and professions.
+         <br>
+         <br>
+         Exams are available in a variety of levels from the basic
+         <br id="exams">
+         1 to 10 for both conservatories, to pedagogy
+         <br>and associate diplomas (ARCT).
+         <br>
+         <br>
+         Check out the <a href="about.html">About</a> page for exam stories!
+      </td>
+      <td rowspan="2">
+        <table>
+          <tr>
+            <td>
+          <button class="accordion">Spring</button>
+          <div class="panel">
+            <table>
+              <tr>
+                <br>
+              </tr>
+              <tr>
+                <td class="conservatory">
+                  Royal Conservatory <br><br>
+                </td>
+
+                <td class="conservatory">
+                  Canadian Conservatory <br><br>
+                </td>
+              </tr>
+
+              <tr>
+                <td valign="top">
+
+                  <h3>
+                    Practical
+                  </h3>
+
+
+                    <ul>
+                      <li class="dates">
+                        <b>• </b>Early to Mid-April
+                      </li>
+                      <li class="dates">
+                        <b>• </b>Early to Late-June
+                      </li>
+                    </ul>
+                  <h3>
+                    Theory
+                  </h3>
+                  <ul>
+                    <li class="dates" id="lastitem">
+                      <b>• </b> Mid-May
+                    </li>
+                  </ul>
+                </td>
+                <td valign="top">
+
+                  <h3>
+                    Practical
+                  </h3>
+                    <ul>
+                      <li class="dates">
+                        <b>• </b> All of June
+                      </li>
+                    </ul>
+                  <h3>
+                    Theory
+                  </h3>
+                  <ul>
+                    <li class="dates" id="lastitem">
+                      <b>• </b> Mid-May
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="app_dates">
+                <td valign="top">
+                  Register by Early Jan, OR Early March
+                  <br>
+                  <br>
+                  <br>
+                </td>
+                <td valign="top">
+                  Register by Mid-March
+                  <br>
+                  <br>
+                  <br>
+                </td>
+              </tr>
+
+            </table>
+
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button class="accordion">Summer</button>
+          <div class="panel">
+            <table>
+              <tr>
+                <br>
+              </tr>
+              <tr>
+                <td class="conservatory">
+                  Royal Conservatory <br><br>
+                </td>
+                <td class="conservatory">
+                  Canadian Conservatory <br><br>
+                </td>
+              </tr>
+
+              <tr>
+                <td valign="top">
+
+                  <h3>
+                    Practical
+                  </h3>
+                    <ul>
+                      <li class="dates">
+                        <b>• </b>Mid to Late-August
+                      </li>
+                    </ul>
+                  <h3>
+                    Theory
+                  </h3>
+                  <ul>
+                    <li class="dates" id="lastitem">
+                      <b>• </b> Early to Mid-August
+                    </li>
+                  </ul>
+                </td>
+                <td valign="top">
+
+                  <h3>
+                    Practical
+                  </h3>
+                    <ul>
+                      <li class="dates">
+                        <b>• </b> Mid-Late August
+                      </li>
+                    </ul>
+                  <h3>
+                    Theory
+                  </h3>
+                  <ul>
+                    <li class="dates" id="lastitem">
+                      <b>• </b> Mid August
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr  class="app_dates">
+                <td valign="top">
+                  Register by Early June
+                  <br>
+                  <br>
+                  <br>
+                </td>
+                <td valign="top">
+                  Register by Mid June
+                  <br>
+                  <br>
+                  <br>
+                </td>
+              </tr>
+            </table>
+
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button class="accordion">Winter</button>
+          <div class="panel">
+            <table>
+              <tr>
+                <Br>
+              </tr>
+              <tr>
+                <td class="conservatory">
+                  Royal Conservatory <br><br>
+                </td>
+                <td class="conservatory">
+                  Canadian Conservatory <br><br>
+                </td>
+              </tr>
+              </tr>
+              <tr>
+                <td valign="top">
+
+                  <h3>
+                    Practical
+                  </h3>
+                    <ul>
+
+                      <li class="dates">
+                        <b>• </b>Mid to Late-January
+                      </li>
+                    </ul>
+                  <h3>
+                    Theory
+                  </h3>
+                  <ul>
+                    <li class="dates" id="lastitem">
+                      <b>• </b> Mid-December
+                    </li>
+                  </ul>
+                </td>
+                <td valign="top">
+
+                  <h3>
+                    Practical
+                  </h3>
+                    <ul>
+                      <li class="dates">
+                        <b>• </b> Early to Late February
+                      </li>
+                    </ul>
+                  <h3>
+                    Theory
+                  </h3>
+                  <ul>
+                    <li class="dates" id="lastitem">
+                      <b>• </b> Mid-January
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="app_dates">
+                <td valign="top">
+                  Register by Early Nov
+                  <br>
+                  <br>
+                  <br>
+                </td>
+                <td valign="top">
+                  Register by Mid Nov
+                  <br>
+                  <br>
+                  <br>
+                </td>
+              </tr>
+            </table>
+
+          </div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+    <br>
+    <br>
+    <button id="forward" onClick="document.getElementById('recitals').scrollIntoView({ behavior: 'smooth'});">
+      &#8595;
+    </button>
+    <br>
+    <br>
+
+  </div>
+
+  <div class="parallax2">
+    <br>
+    <table>
+      <tr>
+        <td style="text-align:left;font-family:'Raleway',sans-serif;letter-spacing:2px;color:white;font-size:20px;">
+          <h1 style="margin-left:2.8%;">
+            <strong> RECITALS <strong>
+          </h1>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align:left;color:white;">
+        <p class="text">
+          Jane has bi-annual recitals in <b>June</b> and <b>December</b>. <br>
+          Each and every student is strongly encouraged to perform in the <br>
+          recitals, as they provide excellent stage experience.
+          <br>
+          <br>
+          Recitals foster performance abilities, helping to overcome <Br>
+          stage fright and learn memory and adaptability techniques. <br >
+          Recitals cultivate musicianship and give students a chance to get <br>
+          real world experience, prepare for examinations and showcase their abilities.
+          <br>
+        </p>
+        <p class="text" >
+          Jane can also prepare her students for other recitals that take <br> place throughout the city.
+        </p>
+        </td>
+      </tr>
+      <tr >
+        <td style="text-align:left;color:white;">
+          <br>
+            <li>
+              <aclass="wlink" href="https://bcrmtavictoria.webs.com/studentevents.htm">BCRMTA Victoria</a>
+            </li>
+            <li id="recitals" >
+              <a class="wlink" href="https://bccmusic.squarespace.com/"> BCC Music</a>
+            </li>
+            <br >
+            <br>
+            <br>
+        </td>
+      </tr>
+    </table>
+
+    <button id="forward" onClick="document.getElementById('competitions').scrollIntoView({ behavior: 'smooth'});">
+      &#8595;
+    </button>
+    <br>
+    <br>
+  </div>
+</div>
+<h1 class="subtitle3">
+  <strong> COMPETITIONS <strong>
+</h1>
+  <table>
+    <tr>
+      <td class="seasons" style="text-align:center;">
+        SPRING
+      </td>
+      <td  class="seasons" style="text-align:center;">
+        SUMMER/FALL
+      </td>
+      <td  class="seasons" style="text-align:center;">
+        WINTER
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">
+        <br>
+        <img id="competitions" src="http://www.ottawakiwanismusicfestival.com/wp-content/uploads/150522-211855.jpg" width="70%">
+        <br><i class="text" style="color:rgb(94, 116, 153);" >Credits to Kiwanis</i>
+      </td>
+      <td valign="top">
+        <br>
+        <img src="Images/smol.jpg" width="62%">
+        <br><i class="text" style="color:rgb(94, 116, 153);">Credits to NWIPEC</i>
+      </td>
+      <td valign="top">
+        <br>
+          <img src="Images/gvpaf.jpg" width="70%">
+          <br><i class="text" style="color:rgb(94, 116, 153);">Credits to GVPAF</i>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <br>
+          <br>
+          <li class="competition_list">
+            • <a href="https://sites.google.com/site/spgfestival/">Student Performer's Guild Festival</a>
+          </li>
+          <li class="competition_list">
+            • <a href="https://www.cfmta.org/en/national-piano-competition-rules-and-regulations/">National Piano Competition CFMTA</a>
+          </li>
+          <li class="competition_list">
+            • <a href="https://www.cfmta.org/en/student-composer-competition-rules-and-regulations/">Student Composer Competition</a>
+          </li>
+          <li class="competition_list">
+            • <a href="https://www.cfmta.org/en/call-for-compositions/">Call for Compositions CFMTA</a>
+          </li>
+          <li class="competition_list">
+            • <a href="https://www.tomleemusic.ca/event/2018-steinway-piano-competition/?SID=oq607g5sstddbibmb4mtp8vcp1">Vancouver Steinway Competition</a>
+          </li>
+
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li class="competition_list">
+            • <a href="https://nwpiano.com/apply/">NWIPEC</a>
+          </li>
+          <li class="competition_list">
+              • <a href="https://www.cmcnational.com/en/cmc2018/general/calendrier/">Canadian Music Competition</a>
+          </li>
+          <li class="competition_list">
+            • <a href="https://www.cochranpianocompetition.com/competition?gclid=Cj0KCQiAjZLhBRCAARIsAFHWpbE4K-h0bP-ziUiorOAoIQWUQDRoOlU2gRJqNW1_YotRa6bBAt-b7PQaAmbFEALw_wcB&utm_campaign=OH_Julian_Cochran_2019&utm_medium=Google_Ads&utm_source=Search">International Cochran Piano Competition</a>
+          </li>
+          <li class="competition_list">
+            • <a href="http://rmfs.org/">Richmond Music Festival</a>
+          </li>
+      </td>
+      <td>
+        <ul>
+          <li class="competition_list">
+            • <a href="http://www.gvpaf.org/register.aspx">Greater Victoria Performing Arts Festival</a>
+          </li>
+          <li class="competition_list">
+            • <a href="http://www.sookephil.ca/competition/">Don Chrysler Concerto Competition</a>
+          </li>
+          <li class="competition_list" >
+              • <a href="http://www.kfv.ca/entry.html">Kiwanis Vancouver</a>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+  <br>
+
+  <button id="forward" onClick="document.getElementById('programs').scrollIntoView({ behavior: 'smooth'});">
+    &#8595;
+  </button>
+  <br>
+  <br>
+</div>
+<div class="parallax3">
+  <br>
+  <table width="100%">
+    <tr>
+      <td>
+        <h1 class="subtitle2" style="text-align:left;">
+          <strong> MUSIC PROGRAMS <strong>
+        </h1>
+      </td>
+      <td>
+
+      </td>
+    </tr>
+    <tr>
+      <td class="text2" valign="top" rowspan="2">
+        <p style="margin-left:5%;">
+          Music camps and summer programs are one of the
+          most <br>amazing ways in which a student can gain
+          experience into <br>the ever diversifying and exciting realm of music.
+        </p>
+        <p style="margin-left:5%;">
+          Camps and summer programs offer one of a kind
+          <br>experiences that can offer tremendous insight
+          and <br>hands-on experience for any student.
+        </p>
+        <p style="margin-left:5%;">
+          From digital music production, to jazz composition and <br id="programs">conducting,
+          camps are unique experiences to
+          network <br>and explore different aspects
+          of music
+          beyond the <br>typical private lesson setting.
+        </p>
+      </td>
+      <td rowspan="2" valign="top">
+          <table>
+            <tr>
+              <td>
+                <button class="accordion">Langara Digital Music Production</button>
+                <div class="panel">
+                  <br>
+                  <table>
+                    <tr>
+                      <td>
+                        <h3>
+                          <a href="https://langara.ca/continuing-studies/programs-and-courses/summer-camps/camp-details.html"> Beginner | July 3–13 </a>
+                        </h3>
+                      </td>
+                      <td>
+                        <h3>
+                          <a href="https://langara.ca/continuing-studies/programs-and-courses/summer-camps/camp-details.html">Advanced | July 16–27</a>
+                        </h3>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:left;">
+                        Interested in electronic music, DJing, or music production? Want to record movie, TV, and video game music? Bring your headphones and get started!
+                      </td>
+                      <td style="text-align:left;">
+                        Participants will go deeper into the technical and productions side of digital music and explore the software that goes into producing their own piece.
+                      </td>
+                    </tr>
+                  </table>
+
+                  <br>
+                  <br>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button class="accordion">Vancouver Academy of Music</button>
+                <div class="panel">
+                  <br>
+                  <table>
+                    <tr>
+                      <td style="text-align:left;">
+                        VAM’s hand-selected faculty is comprised of Vancouver’s finest musicians and educators from organizations such as Vancouver Symphony Orchestra and UBC School of Music.
+                        <br>
+                        <br>
+                        Discover text setting, harmony, and storytelling in this introduction to the craft of composition.
+
+                      </td>
+                      <td style="text-align:left;" >
+
+                        <li style="color:black;font-size:18px;">
+                          Jazz/Pop Songwriting
+                        </li>
+                        <li style="color:black;font-size:18px;">
+                          Composition
+                        </li>
+                        <li style="color:black;font-size:18px;">
+                          Conducting
+                        </li>
+                        <br>
+                        <br>
+                        <ul>
+                          <li style="color:black;" class="details">
+                            <b class="details">Click <a style="color:rgb(53, 97, 168);" href="https://vancouveracademyofmusic.com/summer-programs/">here</a> for more information!</b>
+                      </li>
+                    </ul>
+                      </td>
+                    </tr>
+                  </table>
+                   <br>
+                   <br>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button class="accordion">UBC Summer Music</button>
+                <div class="panel">
+                  <br>
+                  <table>
+                    <tr>
+                      <td style="text-align:left;">
+                        The two week-long programmes offer students the opportunity to concentrate on their instruments for up to six hours each day and to interact with UBC School of Music faculty, studying students, and serious young musicians worldwide!
+                      </td>
+                      <td style="text-align:left;">
+                        <li style="color:black;font-size:18px;">
+                          Jazz Band I, II, III
+                        </li>
+                        <li style="color:black;font-size:18px;">
+                          Concert Band I, II, III
+                        </li>
+                        <li style="color:black;font-size:18px;">
+                          String Orchestra I, II
+                        </li>
+                        <br>
+                        <br>
+                        <ul>
+                          <li style="color:black;" >
+                            <b class="details">Click <a style="color:rgb(53, 97, 168);" href="http://summer.music.ubc.ca/">here</a> for more information!</b>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <br>
+                  <br>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button class="accordion">Brentwood Musical Theatre</button>
+                <div class="panel">
+                  <br>
+                  <table>
+                    <tr>
+                      <td>
+                        <h3>
+                          Youth | July 7 - 12
+                        </h3>
+                      </td>
+                      <td>
+                        <h3>
+                          Teen | July 2 - 6
+                        </h3>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:left;">
+                        The camp will focus on acting, singing, improvisation, creativity and fun. Students will perform a musical in the T.Gil Bunch Centre theatre!
+                        <br>
+                        <br>
+                        <b class="details"> Click <a style="color:rgb(53, 97, 168);" href="https://wp-multi.brentwood.bc.ca/camps/musical-theatre-camp/"> here</a> for more info!</b>
+                      </td>
+                      <td style="text-align:left;">
+                        This camp will focus on jazz, hip-hop, disco, improvisation and creativity. This array of talent and diversity will lend itself to this year's concert, which is not to be missed!
+                      </td>
+                    </tr>
+
+                  </table>
+
+                  <br>
+                  <br>
+                </div>
+              </td>
+            </tr>
+      </table>
+  </td>
+</tr>
+
+</table>
+
+</div>
+
+  <footer>
+    <p style="text-align:center;margin-right:45%;margin-left:45%;">
+      <table style="text-align:center;">
+        <!--<tr>
+          <td colspan="3" class="icons">
+            CONTACT
+            <br>
+            <br>
+          </td>
+        </tr> -->
+
+        <tr>
+
+        <td>
+          <a href="https://www.facebook.com/arrowsmithpiano/" > <img src="Images/fb.png" style="height:40px;"></a>
+        </td>
+        <td>
+          <a href="mailto:jane@arrowsmithpiano.com" class="icons"><img src="Images/mailicon.png" style="height:40px;"> </a>
+        </td>
+        <td>
+          <a href="https://www.linkedin.com/in/jane-arrowsmith-4a4ab623/" class="icons"> <img src="Images/linkedin.png" style="height:40px;"> </a>
+        </td>
+      </tr>
+
+    </p>
+  </footer>
+  <script src="general.js"></script>
+</body>
+</html>

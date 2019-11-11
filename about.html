@@ -1,0 +1,620 @@
+<html>
+<head>
+  <link rel="icon" href="Images/pianoIcon.png">
+  <link href="https://fonts.googleapis.com/css?family=Share|Unica+One|Raleway|Montserrat|Open+Sans" rel="stylesheet">
+  <title>
+    Arrowsmith Piano
+  </title>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      width:inherit;
+      margin:0px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      top:0;
+      overflow: hidden;
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+
+    }
+
+    li {
+        color:white;
+        margin-left: 3em;
+        font-size: 19px;
+        font-weight: normal;
+    }
+
+    .navli {
+      margin: 0;
+      font-size: 1.1vw;
+      padding-top: 1.2vw;
+      padding-bottom:1.2vw;
+      padding-left: 1.2vw;
+      padding-right: 0.6vw;
+      display: inline;
+      float:right;
+      text-align: right;
+      font-family: 'Raleway', sans-serif;
+      letter-spacing: 2px;
+    }
+
+    .navli a {
+      text-decoration: none;
+      padding-top: 20px;
+      padding-bottom:20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      color:white;
+      text-transform:uppercase;
+
+    }
+
+    .navli a:hover {
+      background-color:rgba(0, 4, 33, 1);
+      color: rgb(138, 163, 204);
+      transition: color 0.5s ease-in-out;
+      transition: background-color 0.5s ease-in-out;
+    }
+    .nav {
+      padding:0%;
+        background-color: rgba(0, 4, 33, 0.8);
+    }
+
+    .parallax1 {
+      padding-top: 1em;
+      background-image: url("Images/about1.png");
+      min-height: 47vw;
+      background-attachment: fixed;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Raleway', sans-serif;
+      color:white;
+      width:100%;
+
+    }
+
+    .parallax2 {
+      text-align: left;
+      margin-top:1em;
+      padding-top: 1em;
+      background-image: url("Images/cert.jpg");
+      background-position: center;
+      min-height: 20vw;
+      padding-bottom: 1em;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Raleway', sans-serif;
+
+      width:100%;
+
+    }
+
+    .parallax3 {
+      text-align: left;
+
+      padding-top: 1em;
+      background-image: url("Images/locations.png");
+      background-position: center;
+      min-height: 20vw;
+      padding-bottom: 1em;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Raleway', sans-serif;
+
+      width:100%;
+
+    }
+
+    .title {
+      padding-top: 7vw;
+      font-size: 5vw;
+      color:white;
+      text-align: center;
+      padding-left: 5vw;
+      letter-spacing: 5px;
+
+    }
+
+    hr {
+      width:5%;
+      text-align: left;
+    }
+
+    .first {
+      margin-left: 5vw;
+    }
+
+    button {
+      border-radius: 0.5vw;
+      background-color:rgb(219, 219, 219, 0.8);
+      font-size: 1vw;
+      padding: 1vw;
+      padding-left: 1.3vw;
+      padding-right: 1.3vw;
+      font-family: 'Raleway', sans-serif;
+      color:white;
+      border:0px;
+      margin-bottom: 2em;
+
+    }
+
+    button:hover {
+      background-color:rgba(219, 219, 219, 0.3);
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    .subtitle {
+      font-family: 'Raleway',sans-serif;
+      color:rgb(94, 116, 153);
+      padding-bottom:0.5em;
+      padding-right:1em;
+      padding-left:1em;
+      font-size: 36px;
+      font-weight: bolder;
+      letter-spacing: 2px;
+
+    }
+
+    .subtitle2 {
+      font-family: 'Raleway',sans-serif;
+      color:white;
+      padding-bottom:0.5em;
+      padding-right:1em;
+      padding-left:1em;
+      font-size: 36px;
+      font-weight: bolder;
+      letter-spacing: 2px;
+    }
+
+    .text {
+      font-family:'Raleway', sans-serif;
+      font-size: 17px;
+      color:black;
+      margin-left:2em;
+    }
+
+    .text2 {
+      font-family:'Raleway', sans-serif;
+      font-size: 18px;
+      color:white;
+      margin-left: 2em;
+      font-weight: normal;
+    }
+
+    .mini_title {
+      margin-left: 2em;
+      color:rgb(94, 116, 153);
+      font-family: 'Raleway', sans-serif;
+      font-size: 18px;
+      font-weight:bold;
+      margin-bottom: 0.6em;
+    }
+
+    .mini_title2 {
+      margin-left: 2em;
+      color:rgb(173, 176, 206);
+      font-family: 'Raleway', sans-serif;
+      font-size: 18px;
+      font-weight:bold;
+      margin-bottom: 0.6em;
+    }
+
+    .mini_title3 {
+      margin-left: 2em;
+      color:white;
+      font-family: 'Raleway', sans-serif;
+      font-size: 18px;
+      font-weight:bold;
+      margin-bottom: 0.6em;
+    }
+
+    #forward {
+      border-radius: 100%;
+      padding-bottom:0.7vw;
+      padding-top:0.7vw;
+      padding-left: 1.1vw;
+      padding-right: 1.1vw;
+      color:rgb(48, 48, 48);
+      background-color: rgb(226, 226, 226);
+    }
+
+    #forward:hover {
+      background-color: rgb(183, 183, 183);
+    }
+
+    .testimonials{
+      padding-right: 1.44em;
+      padding-left: 1.5em;
+      padding-top: 1.5em;
+      padding-bottom: 1.1em;
+      font-size: 1.15vw;
+      background-color: rgb(247, 247, 247);
+      border-radius: 10px;
+      font-family: 'Raleway', sans-serif;
+      margin-left:1.44vw;
+      margin-right:1.44vw;
+      margin-bottom:1.44vw;
+      width:17.5vw;
+      min-height: 11vw;
+
+    }
+
+    #testimonials {
+      padding-left: 1vw;
+      padding-right: 1vw;
+
+    }
+    #person {
+      color:rgb(53, 97, 168);
+      font-weight: bold;
+      font-size: 1.4vw;
+    }
+
+    #forward {
+      border-radius: 100%;
+      padding-bottom:0.7vw;
+      padding-top:0.7vw;
+      padding-left: 1.1vw;
+      padding-right: 1.1vw;
+      color:rgb(48, 48, 48);
+      background-color: rgb(226, 226, 226);
+    }
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 24px;
+      border: none;
+      outline: none;
+      border-radius: 1vw;
+      background-color:rgb(158, 165, 209);
+      color: white;
+      cursor: pointer;
+      padding-left: 1%;
+      padding-right:1%;
+      padding-top: 0.5%;
+      padding-bottom:0.5%;
+      border-radius: 4px;
+      transition: 0.5s ease-in-out;
+    }
+
+      #myBtn:hover {
+        background-color: #555;
+      }
+  </style>
+
+</head>
+<body>
+  <ul class="nav" >
+    <li class="navli"><a href="contact.html">Contact/FAQ  </a></li>
+    <li class="navli"><a href="resources.html">Resources</a></li>
+    <li class="navli"><a href="events.html">Events</a></li>
+    <li class="navli"><a href="gallery.html">Gallery</a></li>
+    <li class="navli"><a href="about.html">About</a></li>
+    <li class="navli"><a href="index.html">HOME</a></li>
+  </ul>
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#8679;</button>
+  <div class="parallax1">
+    <table style="text-align:center;width:100%;">
+      <tr>
+        <td>
+          <p class="title">
+            JANE
+          </p>
+          <button class="first" onClick="document.getElementById('jane').scrollIntoView({ behavior: 'smooth'});">
+            &#8595;
+          </button>
+        </td>
+        <td>
+          <p class="title">
+
+          STUDIO
+          </p>
+          <button class="first" onClick="document.getElementById('studio').scrollIntoView({ behavior: 'smooth'});">
+            &#8595;
+          </button>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+
+  <div >
+    <br>
+    <br>
+    <table width="80%">
+      <Br>
+      <tr>
+        <td>
+            <h1 class="subtitle">
+              <strong> EARLY LIFE & EDUCATION <strong>
+            </h1>
+          </td>
+          <td rowspan="2" style="text-align:center;">
+            <img src="Images/jane2.jpg" width="60%">
+          </td>
+          <td rowspan="2" style="text-align:center;">
+            <img src="Images/uni.png" width="100%">
+          </td>
+      </tr>
+      <tr>
+        <td width="50%">
+          <p class="mini_title">
+            EARLY LIFE
+          </p>
+          <p class="text">
+            Jane was born in Saskatchewan, and raised in Ottawa.<br id="jane">
+
+            Her musical interest was apparent at a very early age and nurtured
+
+            by her parents. Piano lessons began at the age of 6 years, and she performed locally in Ottawa, studying with
+
+            Dina Namer in her teenage years.
+        </p>
+        <p class="mini_title">
+          EDUCATION
+        </p>
+        <p class="text">
+          Jane completed a <span style="color:rgb(94, 116, 153);"><b>Bachelor's Degree</b></span> from UOttawa and Carleton, where she studied with Andrew Tunis, Canadian piano soloist, Juno nominee and Department Head.
+          <br>She also studied with Christina Petrowska, with a PhD from Sorbonne and professor of Musicology and Piano Performance at York University.
+        </p>
+        <br>
+        <br>
+        </td>
+      </tr>
+
+    </table>
+    <br>
+    <p style="text-align:center;">
+    <button id="forward" onClick="document.getElementById('certs').scrollIntoView({ behavior: 'smooth'});">
+      &#8595;
+    </button>
+
+  </p>
+  </div>
+
+    <div class="parallax2">
+
+          <br>
+          <br>
+        <h1 class="subtitle2">
+          <strong> CERTIFICATION & EXPERIENCE <strong>
+        </h1>
+        <table width="100%">
+
+            <tr>
+              <td>
+              <p class="mini_title2">
+                CERTIFICATION
+              </p>
+              <p class="text2" >
+                Over her many years of experience, Jane has numerous certificates and licenses. These include her:
+              </p>
+              <li id="certs">
+                <b>ARCT</b> (Certified teacher of RCM)
+              </li>
+              <li>
+                <b>Kindermusik License</b> (For children from birth to 5 years)
+              </li>
+              <li>
+                <b>MYC Sunrise Teacher Training</b> (Music for Young Children)
+              </li>
+            </td>
+            <td rowspan="2" style="text-align:center;">
+              <img src="Images/arct.png">
+            </td>
+            </tr>
+            <tr>
+            <td width="50%">
+              <br>
+
+              <p class="mini_title2">
+                EXPERIENCE & MEMBERSHIPS
+              </p>
+              <p class="text2" >
+                Jane has been teaching for over 25 years and is a registered ORMTA and soon BCRMTA teacher. Her other notable memberships include:
+              </p>
+              <li>
+                <b>CFMTA</b>, Canadian Federation of Music Teachers' Association
+              </li>
+              <li>
+                <b>Victoria Branch</b> of BCRMTA
+              </li>
+              <li>
+                Gloucester Music Teacher's Association
+              </li>
+              <li>
+                  Ontario Music Teachers' Association
+              </li>
+              <li>
+                 Kanata Music Club
+              </li>
+            </td>
+            <td>
+            </td>
+          </tr>
+
+
+        </table>
+      <br>
+      <br>
+      <br>
+  </div>
+  <div class="parallax3">
+    <table width="100%">
+      <tr>
+        <td>
+          <br>
+          <h1 class="subtitle2" >
+            <strong> STUDIO <strong>
+          </h1>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="mini_title3">
+            LOCATION
+          </p>
+        </td>
+        <td>
+          <p class="mini_title3" id="studio" style="margin-left:10%;">
+            STUDENT PERFORMANCE
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td  valign="top">
+          <p style="margin-left:2em;" >
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2648.1494616355303!2d-123.5143614841082!3d48.415274839757224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f0c44a81bbc39%3A0x9432e7e8039ff6aa!2s3530+Sun+Hills%2C+Victoria%2C+BC+V9C+4J8!5e0!3m2!1sen!2sca!4v1546553712017" width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </p>
+        </td>
+        <td >
+          <Br>
+          <video width="60%" style="margin-left:10%;" controls>
+          <source src="Images/performance.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <p style="text-align:center;">
+    <button id="forward" onClick="document.getElementById('story1').scrollIntoView({ behavior: 'smooth'});">
+      &#8595;
+    </button>
+
+  </p>
+  </div>
+  <div >
+    <br>
+
+    <h1 class="subtitle" style="color:rgb(53, 97, 168);text-align:center;">
+      <strong> EXAM STORIES <strong>
+    </h1>
+    <table id="testimonials">
+      <tr id="one">
+        <td>
+          <div class="testimonials">
+              <b>I still remember the first time I walked into the exam room.</b>
+              <br>
+              <br id="story1">
+             The cold AC, sweaty palms, and the kind receptionist at the front of the room. It wasn’t easy to shake off the nerves, but once I sat down in front of the keys and it’s as if I was back home, sitting in the practise room as the familiar dim lighting shone across the keys. From there it was all natural instinct.  It is an experience I will never forget. Piano has no doubt changed my life for the better.
+            <br>
+            <p id="person">
+            - Jane Yao
+            </p>
+          </div>
+        </td>
+        <td>
+          <div class="testimonials">
+          Having gone through multiple piano exams, <b>the experiences have taught me a plethora of skills.</b>
+          <br>
+          <br>
+          It taught me to be patient, and that improving will only come with hard work and persistence. On the day of the exam, hard work and determination for music trumps my initial feelings of anxiety. When things get tough or difficult in life, I now approach such challenges with optimism.
+
+            <p id="person">
+            - Richard Xu
+            </p>
+          </div>
+        </td>
+        <td>
+          <div class="testimonials">
+            My experience with piano exams have been <b>nerve-wracking yet influential.</b>
+            <br>
+            <br>
+            They’ve taught me that you have to focus on the present to make sure the notes are played correctly instead of dwelling on any past errors. Such a lesson is not only important in piano, but in every aspect of life, and I am grateful that participating in piano exams have given me such a learning opportunity.
+
+            <p id="person">
+            - Dhruv Rawat
+            </p>
+          </div>
+        </td>
+        <td>
+          <div class="testimonials">
+            Piano exams are an undeniably difficult part of the musical journey. <br>
+            <Br>I remember walking into the exam room, hands shaking, watching the photo of the examiner as that of a Disney villain. Unlike my imagination, the examiner was kind and friendly. The experience taught me so much. I learnt that despite the fear or the extreme expectations you set for yourself, that in the end <b>anything is possible, it just comes down to perspective.</b>
+
+            <p id="person">
+            - Bonnie Chin
+            </p>
+          </div>
+        </td>
+      </tr>
+      <br>
+    </table>
+    <br>
+    <br>
+  </div>
+
+    <footer>
+      <div>
+        <table width="100%" style="background-color:rgb(43, 46, 71);margin:0;margin-bottom:0;">
+          <tr>
+            <td colspan="4" style="font-family:'Raleway';color:white;text-align:center;">
+              <br>
+              Jane Arrowsmith | 2019
+            </td>
+          </tr>
+          <tr>
+            <td>
+            </td>
+            <td>
+            <table style="text-align:center;margin-left:45%;padding-top:1%;padding-bottom:1%;">
+              <tr>
+              <td>
+                <a href="https://www.facebook.com/arrowsmithpiano/" > <img src="Images/fb.png" style="height:40px;"></a>
+              </td>
+              <td>
+                <a href="mailto:jane@arrowsmithpiano.com" class="icons"><img src="Images/mailicon.png" style="height:40px;"> </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/in/jane-arrowsmith-4a4ab623/" class="icons"> <img src="Images/linkedin.png" style="height:40px;"> </a>
+              </td>
+            </tr>
+          </td>
+          <td>
+          </td>
+      </table>
+      </tr>
+    </table>
+    </div>
+    </footer>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.getElementById("myBtn").style.display = "block";
+          } else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

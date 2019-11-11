@@ -1,0 +1,402 @@
+<html>
+<head>
+  <link rel="icon" href="Images/pianoIcon.png">
+  <link href="https://fonts.googleapis.com/css?family=Share|Unica+One|Raleway|Montserrat|Open+Sans" rel="stylesheet">
+  <title>
+    Arrowsmith Piano
+  </title>
+
+  <style>
+
+  html {
+    scroll-behavior: smooth;
+  }
+    body {
+      width:inherit;
+      margin:0px;
+      /*background-color: rgb(0, 6, 40);  */
+}
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top:0;
+    overflow: hidden;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+
+  }
+
+.navli {
+  margin: 0;
+
+  padding-top: 1.2vw;
+  padding-bottom:1.2vw;
+  padding-left: 0.6vw;
+  padding-right: 0.6vw;
+  display: inline;
+  float:right;
+  text-align: right;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+}
+
+.navli a {
+  font-size: 1.1vw;
+  text-decoration: none;
+  padding-top: 2.5em;
+  padding-bottom:2em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  margin-left: 1vw;
+  color:white;
+  text-transform:uppercase;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navli a:hover {
+  background-color:rgba(0, 4, 33, 1);
+  color: rgb(138, 163, 204);
+  transition: color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+.nav {
+  font-size: 16px;
+  padding:0%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(0, 4, 33, 0.8);
+}
+    .parallax1 {
+      padding-top: 1em;
+      background-image: url(Images/contact.jpg);
+      height: 20vw;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Raleway', sans-serif;
+      color:white;
+      width:100%;
+
+    }
+
+    .title {
+      margin-left: 34%;
+      margin-right: 33%;
+      font-size: 5vw;
+
+    }
+
+    hr {
+      width:5%;
+      text-align: left;
+    }
+
+    button {
+      border-radius: 0.5vw;
+      background-color:rgb(158, 165, 209);
+      font-size: 1vw;
+      padding: 1vw;
+      padding-left: 1.3vw;
+      padding-right: 1.3vw;
+      font-family: 'Raleway', sans-serif;
+      color:white;
+      border:0px;
+      margin-left: 49%;
+      margin-right: 47%;
+      margin-bottom: 2em;
+
+    }
+
+    button:hover {
+      background-color:rgb(122, 127, 163);
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    .subtitle {
+      font-family: 'Raleway',sans-serif;
+      color:rgb(48, 48, 48);
+      margin-top: 1em;
+      padding-bottom:0.5em;
+      padding-right:1em;
+      padding-left:1em;
+      font-size: 36px;
+      font-weight: bolder;
+      text-align: center;
+
+    }
+
+    .details {
+      font-size: 28px;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    footer {
+      background-color: rgba(0, 4, 33, 0.8);
+      margin-top: 4em;
+      padding-top: 1em;
+      padding-bottom:1em;
+    }
+
+    .question {
+      margin-left: 1em;
+      font-family: 'Raleway', sans-serif;
+      font-size: 24px;
+      color:rgb(53, 97, 169);
+    }
+
+    .answer {
+      font-size: 16px;
+      font-family: 'Raleway', sans-serif;
+      margin-left: 1.6em;
+    }
+
+    .bubble1 {
+      border-radius: 10px;
+      background-color: rgb(247, 247, 247);
+      margin-left: 2.8vw;
+      padding:0.5em;
+      padding-right: 1em;
+      max-width: 27vw;
+      margin-right: 1vw;
+      margin-bottom: 2em;
+    }
+
+    #forward {
+      margin-top: 10%;
+      border-radius: 100%;
+      padding-bottom:0.7vw;
+      padding-top:0.7vw;
+      padding-left: 1.1vw;
+      padding-right: 1.1vw;
+      color:rgb(48, 48, 48);
+      background-color: rgb(226, 226, 226);
+      margin-left: 49%;
+    }
+
+    .bubble {
+      border-radius: 10px;
+      background-color: rgb(247, 247, 247);
+      margin-left: 2.7vw;
+      padding:0.5em;
+      padding-right:2em;
+      max-width: 27vw;
+      margin-bottom: 2em;
+    }
+
+    .bubblefaq {
+      border-radius: 10px;
+      background-color: rgb(247, 247, 247);
+      margin-left: 1vw;
+      padding:0.5em;
+      padding-right:1.5em;
+      max-width: 25vw;
+      margin-right: 1vw;
+      margin-bottom: 2em;
+    }
+
+    td {
+      width:33%;
+    }
+
+    a {
+      font-family: 'Raleway', sans-serif;
+      font-size: 20px;
+      color: black;
+    }
+  </style>
+
+</head>
+<body>
+  <ul class="nav" >
+    <li class="navli"><a href="contact.html">Contact/FAQ  </a></li>
+    <li class="navli"><a href="resources.html">Resources</a></li>
+    <li class="navli"><a href="events.html">Events</a></li>
+    <li class="navli"><a href="gallery.html">Gallery</a></li>
+    <li class="navli"><a href="about.html">About</a></li>
+    <li class="navli"><a href="index.html">HOME</a></li>
+  </ul>
+
+  <div class="parallax1">
+    <br>
+    <p class="title">
+      FAQ + Contact
+
+
+    </p>
+
+  </div>
+
+  <div>
+    <table>
+      <tr>
+        <br>
+        <br>
+      </tr>
+      <tr>
+        <td rowspan="4" id="form">
+          <div style="margin-left:30px;">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfSN4cDBeIuM-CWe3gtajqf4GUmsfbEM-T2Bi6MMXxw-NbCnw/viewform?embedded=true" width="640" height="360" frameborder="0" >Loading...</iframe>
+          </div>
+        </td>
+        <td>
+          <div class="bubble1" style="margin-left:3.2em;">
+
+            <img src="Images/gmail.png" width="40px" height="40px" > &nbsp; &nbsp; <a href="mailto:janearrowsmith17@gmail.com"> janearrowsmith17@gmail.com </a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td >
+          <div class="bubble">
+            <img src="Images/call.png" width="40px" height="40px"> &nbsp; &nbsp; <a href=""> 613-592-4240 </a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="bubble1" style="text-align:left;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png" width="40px" height="40px"> &nbsp; &nbsp; <a href="https://www.facebook.com/arrowsmithpiano/"> Jane Arrowsmith </a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="bubble1">
+            <img src="Images/loc.png"> &nbsp; &nbsp; <a href="https://www.google.com/maps?ll=48.415271,-123.512173&z=15&t=m&hl=en-US&gl=CA&mapclient=embed&q=3530+Sun+Hills+Victoria,+BC+V9C+4J8"> Studio Address </a>
+          </div>
+        </td>
+      </tr>
+      <br>
+</table>
+<br>
+<br>
+<table>
+  <td>
+  </td>
+      <td>
+        <h1 class="subtitle"> FAQ </h1>
+      </td>
+      <Td>
+      </td>
+      <tr>
+        <td valign="top">
+          <div class="bubble1" style="margin-left:2em;">
+            <h3 class="question">
+            What age should my child start piano?
+            </h3>
+            <p class="answer" id="one">
+              The typical starting age is anywhere from 5-8 years old, but it really depends. <br> <br>If your child can sit down for a period of time and is open to having some fun then let's get started! <br>
+            </p>
+          </div>
+        </td>
+        <td >
+          <div class="bubble">
+            <h3 class="question">
+            What are your credentials? How long have you been teaching?
+            </h3>
+            <p class="answer">
+              I've been teaching for over 30 years now, and am a RMT (registered music teacher) and a part of the CFMTA (Canadian Federation of Music Teacher's Association). <br> I have a Bachelor's Degree in Music and have completed my ARCT for teaching.
+              <br> <br> See the <a href="about.html">About Me</a> section of my website for more information.
+            </p>
+          </div>
+        </td>
+        <td>
+          <div class="bubblefaq">
+            <h3 class="question">
+            What levels do you teach?
+            </h3>
+            <p class="answer">
+              I teach students of all levels! <br>Whether you're a beginner or working towards your level 10 certificate, this is a place for you.
+              <br>
+              <br>
+              I teach for both the RCM (Royal Conservatory of Music) and the CC (Canadian Conservatory). It is completely, 100% the student's choice whether they would like to partake in a Conservatory curriculum, or simply embrace the joy of music.
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <div class="bubble1" style="margin-left:2em;">
+            <h3 class="question">
+              What are you billing cycles/cancellation policies?
+            </h3>
+            <p class="answer">
+              Payment is made by post-dated cheques. <br><br> At least one month's advance notice must be given before termination of all lessons, after which the cheques dated for the next month would be returned.
+              <br>
+              <br>
+              My policies align similarly to that recommended by the BCRMTA/ORMTA. Feel free to send an inquiry above for more information!
+            </p>
+          </div>
+        </td>
+        <td >
+          <div class="bubble">
+            <h3 class="question">
+            Where and what do you teach?
+            </h3>
+            <p class="answer">
+              Currently I teach at 3530 Sun Hills, Victoria. Click the location link above for the Google Maps!
+
+              Recitals will take place in an alternate location with a larger venue, including churches etc.
+              <br>
+              <br>
+              I teach beginner to advanced piano, along with basic to advanced rudiments in music theory.
+            </p>
+          </div>
+        </td>
+        <td>
+          <div class="bubblefaq">
+            <h3 class="question">
+            What's your approach to teaching?
+            </h3>
+            <p class="answer">
+              All lessons are tailored to the student as everyone learns differently. Which I believe is a fundamental aspect to good teaching.
+              <br>
+              <br>
+                I take a supportive and fun approach to teaching while delivering the knowledge and feedback easily and efficiently, in a way the student can really understand.
+              <br>
+              <br>
+            </p>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+
+  </div>
+
+  <footer>
+    <p style="text-align:center;margin-right:45%;margin-left:45%;">
+      <table style="text-align:center;">
+        <!--<tr>
+          <td colspan="3" class="icons">
+            CONTACT
+            <br>
+            <br>
+          </td>
+        </tr> -->
+
+        <tr>
+
+        <td>
+          <a href="https://www.facebook.com/arrowsmithpiano/" > <img src="Images/fb.png" style="height:40px;"></a>
+        </td>
+        <td>
+          <a href="mailto:jane@arrowsmithpiano.com" class="icons"><img src="Images/mailicon.png" style="height:40px;"> </a>
+        </td>
+        <td>
+          <a href="https://www.linkedin.com/in/jane-arrowsmith-4a4ab623/" class="icons"> <img src="Images/linkedin.png" style="height:40px;"> </a>
+        </td>
+      </tr>
+
+    </p>
+  </footer>
+  <script>
+  </script>
+</body>
+</html>
